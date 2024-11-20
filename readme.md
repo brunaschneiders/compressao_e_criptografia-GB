@@ -46,13 +46,14 @@ O objetivo deste projeto é implementar algoritmos de codificação e decodifica
 ```bash
     $ npm start
     Insira os símbolos ou codewords (binários): teste
-    Escolha o método (repeticao, hamming): repeticao
+    Escolha o método (repetition, hamming): hamming
     Escolha a ação (encode, decode): encode
-    Resultado: 00000000000000110000000000000011010000000000000010110000000000000011000000000000001101
+    0111010001100101011100110111010001100101
+    Resultado: 0111010010011001100010101101011101000111000111010010011001100010101101
 
     $ npm start
-    Insira os símbolos ou codewords (binários): 00000000000000110000000000000011010000000000000010110000000000000011000000000000001101
-    Escolha o método (repeticao, hamming): repeticao
+    Insira os símbolos ou codewords (binários): 0111010010011001100010101101011101000111000111010010011001100010101101
+    Escolha o método (repetition, hamming): hamming
     Escolha a ação (encode, decode): decode
     Resultado: teste
 ```

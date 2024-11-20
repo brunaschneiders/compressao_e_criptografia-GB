@@ -1,6 +1,6 @@
 import readline from "readline";
-import * as Repetition from "./repetition.js";
-import * as Hamming from "./hamming.js";
+import { repetitionEncode, repetitionDecode } from "./repetition.js";
+import { hammingEncode, hammingDecode } from "./hamming.js";
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -44,16 +44,16 @@ async function main() {
     switch (method) {
       case "repetition":
         if (action === "encode") {
-          result = Repetition.encodeText(input);
+          result = repetitionEncode(input);
         } else {
-          result = Repetition.decodeText(input);
+          result = repetitionDecode(input);
         }
         break;
       case "hamming":
         if (action === "encode") {
-          result = Hamming.encodeText(input);
+          result = hammingEncode(input);
         } else {
-          result = Hamming.decodeText(input);
+          result = hammingDecode(input);
         }
         break;
       default:
